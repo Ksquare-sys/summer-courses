@@ -26,6 +26,8 @@
   @keyframes pulseDot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.4)}}
   @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
   @keyframes drawLine{from{stroke-dashoffset:520}to{stroke-dashoffset:0}}
+  .sp-br{display:none;}
+  @media(max-width:640px){.sp-br{display:inline;}}
 </style>
 </helmet>
 
@@ -35,7 +37,7 @@
   <div style="background:#d2492f;color:#fff;font-size:clamp(11px,2.6vw,13.5px);font-weight:700;letter-spacing:.04em;text-align:center;padding:9px 16px;line-height:1.5;">
     <span style="display:inline-flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center;">
       <span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:#fff;animation:pulseDot 1.4s ease-in-out infinite;"></span>
-      夏期講習 申込締切まであと <b style="font-variant-numeric:tabular-nums;">{{ cd.days }}</b> 日 ／ 各講座 定員に達し次第〆切・残席わずか
+      <span style="white-space:nowrap;">夏期講習 申込締切まであと <b style="font-variant-numeric:tabular-nums;">{{ cd.days }}</b> 日</span><br class="sp-br"> ／ 各講座 定員に達し次第〆切・残席わずか
     </span>
   </div>
 
@@ -188,7 +190,7 @@ LINEで無料相談
             <div style="font-family:'Shippori Mincho B1',serif;font-weight:800;font-size:clamp(56px,12vw,96px);line-height:.8;color:rgba(19,35,63,.1);">01</div>
           </div>
           <div style="flex:1 1 380px;min-width:280px;">
-            <h3 style="font-family:'Shippori Mincho B1',serif;font-weight:800;font-size:clamp(22px,4.6vw,32px);line-height:1.35;margin:0 0 22px;color:#13233f;">逆転合格専門塾の強みが、ここで生きる。</h3>
+            <h3 style="font-family:'Shippori Mincho B1',serif;font-weight:800;font-size:clamp(22px,4.6vw,32px);line-height:1.35;margin:0 0 22px;color:#13233f;">逆転合格専門塾の強みが、<br class="sp-br">ここで生きる。</h3>
             <div style="display:flex;flex-direction:column;gap:14px;">
               <div style="display:flex;gap:14px;align-items:flex-start;"><span style="flex:0 0 auto;width:26px;height:26px;border-radius:50%;background:#13233f;color:#d8b271;font-weight:900;font-size:13px;display:flex;align-items:center;justify-content:center;">①</span><p style="margin:0;font-size:clamp(14px,3.3vw,17px);line-height:1.65;">あなたの<b>志望校・学部の過去問を10年単位で徹底分析</b>。出題の癖まで読み切る。</p></div>
               <div style="display:flex;gap:14px;align-items:flex-start;"><span style="flex:0 0 auto;width:26px;height:26px;border-radius:50%;background:#13233f;color:#d8b271;font-weight:900;font-size:13px;display:flex;align-items:center;justify-content:center;">②</span><p style="margin:0;font-size:clamp(14px,3.3vw,17px);line-height:1.65;">合格から逆算した<b>克服分野の優先順位づけ</b>。限られた夏を一点に集中。</p></div>
@@ -203,7 +205,7 @@ LINEで無料相談
             <div style="font-family:'Shippori Mincho B1',serif;font-weight:800;font-size:clamp(56px,12vw,96px);line-height:.8;color:rgba(216,178,113,.16);">02</div>
           </div>
           <div style="flex:1 1 380px;min-width:280px;">
-            <h3 style="font-family:'Shippori Mincho B1',serif;font-weight:800;font-size:clamp(22px,4.6vw,32px);line-height:1.35;margin:0 0 22px;color:#fff;">完全マンツーマンだから、あなたの学力・ペースに合わせた授業。</h3>
+            <h3 style="font-family:'Shippori Mincho B1',serif;font-weight:800;font-size:clamp(22px,4.6vw,32px);line-height:1.35;margin:0 0 22px;color:#fff;">完全マンツーマンだから、<br class="sp-br">あなたの学力・ペースに合わせた授業。</h3>
             <div style="display:flex;flex-direction:column;gap:14px;">
               <div style="display:flex;gap:14px;align-items:flex-start;"><span style="flex:0 0 auto;width:26px;height:26px;border-radius:50%;background:#d8b271;color:#13233f;font-weight:900;font-size:13px;display:flex;align-items:center;justify-content:center;">①</span><p style="margin:0;font-size:clamp(14px,3.3vw,17px);line-height:1.65;color:rgba(246,241,230,.9);"><b style="color:#fff;">自分の苦手分野だけに絞れる</b>。集団授業のように要らない単元に時間を奪われない。</p></div>
               <div style="display:flex;gap:14px;align-items:flex-start;"><span style="flex:0 0 auto;width:26px;height:26px;border-radius:50%;background:#d8b271;color:#13233f;font-weight:900;font-size:13px;display:flex;align-items:center;justify-content:center;">②</span><p style="margin:0;font-size:clamp(14px,3.3vw,17px);line-height:1.65;color:rgba(246,241,230,.9);"><b style="color:#fff;">人の目を気にしなくて大丈夫</b>。何度でも「分かりません」と言える環境。</p></div>
@@ -218,7 +220,7 @@ LINEで無料相談
             <div style="font-family:'Shippori Mincho B1',serif;font-weight:800;font-size:clamp(56px,12vw,96px);line-height:.8;color:rgba(19,35,63,.1);">03</div>
           </div>
           <div style="flex:1 1 380px;min-width:280px;">
-            <h3 style="font-family:'Shippori Mincho B1',serif;font-weight:800;font-size:clamp(22px,4.6vw,32px);line-height:1.35;margin:0 0 22px;color:#13233f;">講習中の「定着度チェックテスト」で、伸びを点数で可視化</h3>
+            <h3 style="font-family:'Shippori Mincho B1',serif;font-weight:800;font-size:clamp(22px,4.6vw,32px);line-height:1.35;margin:0 0 22px;color:#13233f;">講習中の定着度チェックテストで、伸びを点数で可視化</h3>
             <div style="display:flex;flex-direction:column;gap:14px;">
               <div style="display:flex;gap:14px;align-items:flex-start;"><span style="flex:0 0 auto;width:26px;height:26px;border-radius:50%;background:#13233f;color:#d8b271;font-weight:900;font-size:13px;display:flex;align-items:center;justify-content:center;">①</span><p style="margin:0;font-size:clamp(14px,3.3vw,17px);line-height:1.65;">「<b>講習を受けただけで定着しなかった</b>」を構造から防ぐ。</p></div>
               <div style="display:flex;gap:14px;align-items:flex-start;"><span style="flex:0 0 auto;width:26px;height:26px;border-radius:50%;background:#13233f;color:#d8b271;font-weight:900;font-size:13px;display:flex;align-items:center;justify-content:center;">②</span><p style="margin:0;font-size:clamp(14px,3.3vw,17px);line-height:1.65;">テストは暗記の確認ではなく<b>本質的な理解を問うもの</b>。</p></div>
@@ -239,7 +241,7 @@ LINEで無料相談
     <div style="max-width:1180px;margin:0 auto;">
       <div style="margin-bottom:clamp(40px,5vw,64px);" data-reveal>
         <div style="font-size:clamp(11px,2.6vw,13px);font-weight:700;letter-spacing:.16em;color:#d8b271;margin-bottom:16px;">PLATFORM · 全員ができること</div>
-        <h2 style="font-family:'Shippori Mincho B1',serif;font-weight:800;font-size:clamp(28px,6vw,52px);line-height:1.25;margin:0 0 14px;">全受講生が使える、学習基盤。</h2>
+        <h2 style="font-family:'Shippori Mincho B1',serif;font-weight:800;font-size:clamp(28px,6vw,52px);line-height:1.25;margin:0 0 14px;"><span style="white-space:nowrap;">全受講生が使える、学習基盤。</span></h2>
         <p style="font-size:clamp(14px,3.3vw,18px);color:rgba(246,241,230,.72);margin:0;max-width:46ch;line-height:1.7;">授業だけで終わらせない。質問・テスト・自習室・コミュニティまで、合格を支える仕組みがすべて揃う。</p>
       </div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(16px,2.5vw,24px);">
@@ -299,7 +301,7 @@ LINEで無料相談
             <p style="font-size:clamp(15px,3.5vw,19px);line-height:2.05;color:rgba(246,241,230,.86);margin:0 0 26px;max-width:46ch;">
               志望校・学部は<b style="color:#fff;">数の制限なし</b>。<br>各科目の頻出出題パターンから、合格への具体的なステップまで<b style="color:#fff;">一枚で詳しくわかります。</b>
             </p>
-            <p style="font-size:clamp(13px,3vw,16px);line-height:1.7;color:rgba(246,241,230,.7);margin:0;border-left:3px solid #b58a45;padding-left:16px;"><span style="white-space:nowrap;">秋以降の過去問演習までに「何をすればいいか」が明確になります。</span></p>
+            <p style="font-size:clamp(13px,3vw,16px);line-height:1.7;color:rgba(246,241,230,.7);margin:0;border-left:3px solid #b58a45;padding-left:16px;"><span style="white-space:nowrap;">秋以降の過去問演習までに</span><br class="sp-br"><span style="white-space:nowrap;">「何をすればいいか」が明確になります。</span></p>
           </div>
           <div style="flex:1 1 360px;min-width:280px;">
             <div style="background:#fff;border-radius:12px;padding:10px;box-shadow:0 24px 60px rgba(0,0,0,.4);transform:rotate(-1.5deg);">
@@ -425,7 +427,7 @@ LINEで無料相談
       <h2 style="font-family:'Shippori Mincho B1',serif;font-weight:800;font-size:clamp(30px,7vw,60px);line-height:1.25;margin:0 0 22px;">
         この夏を、<span style="color:#d8b271;">分岐点</span>に。
       </h2>
-      <p style="font-size:clamp(15px,3.4vw,19px);line-height:1.75;color:rgba(246,241,230,.82);margin:0 0 38px;">迷ったらまず無料相談へ。現状をヒアリングし、あなたに最適なプランをご提案します。<br>もちろん、しつこい勧誘は一切ありません。</p>
+      <p style="font-size:clamp(15px,3.4vw,19px);line-height:1.75;color:rgba(246,241,230,.82);margin:0 0 38px;">迷ったらまず無料相談へ。現状をヒアリングし、<br class="sp-br">あなたに最適なプランをご提案します。<br>もちろん、しつこい勧誘は一切ありません。</p>
       <a href="https://lin.ee/VUv5TNK" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:11px;background:#06c755;color:#fff;text-decoration:none;font-weight:900;font-size:clamp(16px,3.8vw,21px);padding:19px 44px;border-radius:999px;box-shadow:0 14px 36px rgba(6,199,85,.4);">無料相談で講座を相談する</a>
       <div style="font-size:12px;color:rgba(246,241,230,.5);margin-top:18px;">LINEで友だち追加 → そのままトークで相談OK</div>
     </div>
