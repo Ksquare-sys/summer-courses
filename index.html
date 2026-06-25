@@ -36,6 +36,8 @@
   .cta-move{animation:ctaPulse 1.5s ease-in-out infinite;}
   .list-move{animation:bob 1.4s ease-in-out infinite;}
   @media(prefers-reduced-motion:reduce){.cta-move,.list-move{animation:none;}}
+  .sp-only{display:none;}
+  @media(max-width:640px){.sp-only{display:flex;} .pc-only{display:none;}}
 </style>
 </helmet>
 
@@ -79,6 +81,13 @@ LINEで無料相談
           成績の伸びは、<b style="color:#fff;">この夏が分岐点。</b>
           <span style="display:block;margin-top:.85em;">志望校から逆算した<span style="color:#d8b271;font-weight:700;position:relative;white-space:nowrap;display:inline-block;">あなただけの戦略<svg viewBox="0 0 170 16" preserveAspectRatio="none" style="position:absolute;left:-2%;bottom:-.62em;width:104%;height:.62em;overflow:visible;"><path d="M3 9 C 55 15, 118 15, 165 5" fill="none" stroke="#d8b271" stroke-width="2.6" stroke-linecap="round"/><path d="M165 5 L155 3.5 M165 5 L157 12" fill="none" stroke="#d8b271" stroke-width="2.6" stroke-linecap="round"/></svg></span>で、<br>合格へ最短距離を走る。</span>
         </p>
+        <div class="sp-only" style="align-items:center;gap:14px;background:linear-gradient(135deg,#b58a45,#9a7335);border-radius:14px;padding:16px 20px;box-shadow:0 14px 34px rgba(181,138,69,.34);margin-bottom:24px;">
+          <div style="flex:1;min-width:0;">
+            <div style="font-size:clamp(11px,2.6vw,13px);font-weight:700;color:rgba(255,255,255,.92);letter-spacing:.02em;">完全マンツーマンが</div>
+            <div style="font-family:'Shippori Mincho B1',serif;font-weight:800;color:#fff;line-height:1.05;white-space:nowrap;"><span style="font-size:clamp(13px,3vw,15px);">1コマ</span><span style="font-size:clamp(30px,7.4vw,44px);margin:0 2px;">2,723</span><span style="font-size:clamp(16px,3.6vw,20px);">円</span><span style="font-size:clamp(13px,3vw,15px);">～</span></div>
+          </div>
+          <div style="flex:0 0 auto;background:rgba(12,24,48,.55);border-radius:8px;padding:6px 11px;font-size:clamp(10px,2.4vw,12px);font-weight:800;color:#f6f1e6;text-align:center;line-height:1.35;">60分<br>マンツーマン</div>
+        </div>
         <div style="display:flex;flex-wrap:wrap;gap:14px;margin-bottom:28px;">
           <a href="https://lin.ee/VUv5TNK" target="_blank" rel="noopener" class="sp-wide cta-move" style="display:inline-flex;flex-direction:column;align-items:center;gap:6px;background:#06c755;color:#fff;text-decoration:none;padding:22px 52px;border-radius:22px;box-shadow:0 16px 40px rgba(6,199,85,.42);">
             <span style="font-weight:900;font-size:clamp(22px,5.4vw,30px);letter-spacing:.01em;">無料で体験してみる</span>
@@ -94,7 +103,7 @@ LINEで無料相談
         </div>
       </div>
       <div style="flex:0 1 420px;min-width:280px;display:flex;flex-direction:column;gap:16px;" data-reveal>
-        <div style="display:flex;align-items:center;gap:14px;background:linear-gradient(135deg,#b58a45,#9a7335);border-radius:14px;padding:16px 20px;box-shadow:0 14px 34px rgba(181,138,69,.34);">
+        <div class="pc-only" style="display:flex;align-items:center;gap:14px;background:linear-gradient(135deg,#b58a45,#9a7335);border-radius:14px;padding:16px 20px;box-shadow:0 14px 34px rgba(181,138,69,.34);">
           <div style="flex:1;min-width:0;">
             <div style="font-size:clamp(11px,2.6vw,13px);font-weight:700;color:rgba(255,255,255,.92);letter-spacing:.02em;">完全マンツーマンが</div>
             <div style="font-family:'Shippori Mincho B1',serif;font-weight:800;color:#fff;line-height:1.05;white-space:nowrap;"><span style="font-size:clamp(13px,3vw,15px);">1コマ</span><span style="font-size:clamp(30px,7.4vw,44px);margin:0 2px;">2,723</span><span style="font-size:clamp(16px,3.6vw,20px);">円</span><span style="font-size:clamp(13px,3vw,15px);">～</span></div>
