@@ -31,6 +31,11 @@
   .pc-nowrap{white-space:nowrap;}
   @media(max-width:640px){.pc-nowrap{white-space:normal;}}
   @media(max-width:640px){.sp-wide{width:100%;justify-content:center;}}
+  @keyframes ctaPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.045)}}
+  @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
+  .cta-move{animation:ctaPulse 1.5s ease-in-out infinite;}
+  .list-move{animation:bob 1.4s ease-in-out infinite;}
+  @media(prefers-reduced-motion:reduce){.cta-move,.list-move{animation:none;}}
 </style>
 </helmet>
 
@@ -75,11 +80,11 @@ LINEで無料相談
           <span style="display:block;margin-top:.85em;">志望校から逆算した<span style="color:#d8b271;font-weight:700;position:relative;white-space:nowrap;display:inline-block;">あなただけの戦略<svg viewBox="0 0 170 16" preserveAspectRatio="none" style="position:absolute;left:-2%;bottom:-.62em;width:104%;height:.62em;overflow:visible;"><path d="M3 9 C 55 15, 118 15, 165 5" fill="none" stroke="#d8b271" stroke-width="2.6" stroke-linecap="round"/><path d="M165 5 L155 3.5 M165 5 L157 12" fill="none" stroke="#d8b271" stroke-width="2.6" stroke-linecap="round"/></svg></span>で、<br>合格へ最短距離を走る。</span>
         </p>
         <div style="display:flex;flex-wrap:wrap;gap:14px;margin-bottom:28px;">
-          <a href="https://lin.ee/VUv5TNK" target="_blank" rel="noopener" style="display:inline-flex;flex-direction:column;align-items:center;gap:6px;background:#06c755;color:#fff;text-decoration:none;padding:22px 52px;border-radius:22px;box-shadow:0 16px 40px rgba(6,199,85,.42);">
+          <a href="https://lin.ee/VUv5TNK" target="_blank" rel="noopener" class="sp-wide cta-move" style="display:inline-flex;flex-direction:column;align-items:center;gap:6px;background:#06c755;color:#fff;text-decoration:none;padding:22px 52px;border-radius:22px;box-shadow:0 16px 40px rgba(6,199,85,.42);">
             <span style="font-weight:900;font-size:clamp(22px,5.4vw,30px);letter-spacing:.01em;">無料で体験してみる</span>
-            <span style="font-weight:600;font-size:clamp(12px,2.9vw,15px);opacity:.95;">無理な勧誘はございません<br class="sp-br">お気軽に体験だけでもどうぞ！</span>
+            <span style="font-weight:600;font-size:clamp(12px,2.9vw,15px);opacity:.95;">無理な勧誘はございません。<br class="sp-br">お気軽に体験だけでもどうぞ！</span>
           </a>
-          <a href="#courses" class="sp-wide" style="display:inline-flex;align-items:center;gap:8px;background:transparent;color:#f6f1e6;text-decoration:none;font-weight:700;font-size:clamp(14px,3.2vw,17px);padding:16px 26px;border-radius:999px;border:1.5px solid rgba(216,178,113,.5);">講座一覧を見る ↓</a>
+          <a href="#courses" class="sp-wide list-move" style="display:inline-flex;align-items:center;gap:8px;background:transparent;color:#f6f1e6;text-decoration:none;font-weight:700;font-size:clamp(14px,3.2vw,17px);padding:16px 26px;border-radius:999px;border:1.5px solid rgba(216,178,113,.5);">講座一覧を見る ↓</a>
         </div>
         <div style="display:inline-flex;align-items:center;gap:14px;flex-wrap:wrap;background:rgba(210,73,47,.12);border:1px solid rgba(210,73,47,.4);padding:12px 18px;border-radius:12px;">
           <span style="font-size:12px;font-weight:700;letter-spacing:.08em;color:#f0a596;">申込締切まで</span>
@@ -88,7 +93,14 @@ LINEで無料相談
           </span>
         </div>
       </div>
-      <div style="flex:0 1 420px;min-width:280px;" data-reveal>
+      <div style="flex:0 1 420px;min-width:280px;display:flex;flex-direction:column;gap:16px;" data-reveal>
+        <div style="display:flex;align-items:center;gap:14px;background:linear-gradient(135deg,#b58a45,#9a7335);border-radius:14px;padding:16px 20px;box-shadow:0 14px 34px rgba(181,138,69,.34);">
+          <div style="flex:1;min-width:0;">
+            <div style="font-size:clamp(11px,2.6vw,13px);font-weight:700;color:rgba(255,255,255,.92);letter-spacing:.02em;">完全マンツーマンが</div>
+            <div style="font-family:'Shippori Mincho B1',serif;font-weight:800;color:#fff;line-height:1.05;white-space:nowrap;"><span style="font-size:clamp(13px,3vw,15px);">1コマ</span><span style="font-size:clamp(30px,7.4vw,44px);margin:0 2px;">2,723</span><span style="font-size:clamp(16px,3.6vw,20px);">円</span><span style="font-size:clamp(13px,3vw,15px);">～</span></div>
+          </div>
+          <div style="flex:0 0 auto;background:rgba(12,24,48,.55);border-radius:8px;padding:6px 11px;font-size:clamp(10px,2.4vw,12px);font-weight:800;color:#f6f1e6;text-align:center;line-height:1.35;">60分<br>マンツーマン</div>
+        </div>
         <div style="background:#13233f;border:1px solid rgba(181,138,69,.4);border-radius:16px;padding:clamp(22px,4vw,32px);box-shadow:0 24px 60px rgba(0,0,0,.4);">
           <div style="font-size:12px;font-weight:700;letter-spacing:.12em;color:#d8b271;margin-bottom:6px;">THE TURNING POINT</div>
           <div style="font-family:'Shippori Mincho B1',serif;font-weight:700;font-size:clamp(18px,4vw,24px);color:#f6f1e6;margin-bottom:18px;">夏で、伸び方が決まる。</div>
@@ -135,7 +147,7 @@ LINEで無料相談
         </p>
         <div style="display:flex;flex-wrap:wrap;gap:14px;">
           <a href="https://lin.ee/VUv5TNK" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:9px;background:#06c755;color:#fff;text-decoration:none;font-weight:900;font-size:clamp(15px,3.4vw,18px);padding:16px 30px;border-radius:999px;box-shadow:0 10px 28px rgba(6,199,85,.3);">LINEで無料相談する</a>
-          <a href="#courses" style="display:inline-flex;align-items:center;gap:8px;background:#13233f;color:#f6f1e6;text-decoration:none;font-weight:700;font-size:clamp(14px,3.2vw,17px);padding:16px 26px;border-radius:999px;">講座一覧を見る ↓</a>
+          <a href="#courses" class="list-move" style="display:inline-flex;align-items:center;gap:8px;background:#13233f;color:#f6f1e6;text-decoration:none;font-weight:700;font-size:clamp(14px,3.2vw,17px);padding:16px 26px;border-radius:999px;">講座一覧を見る ↓</a>
         </div>
       </div>
       <div style="flex:0 1 380px;min-width:260px;color:#f6f1e6;" data-reveal>
@@ -169,7 +181,7 @@ LINEで無料相談
       <p style="font-size:clamp(14px,3.2vw,18px);color:rgba(246,241,230,.78);margin:0 0 36px;">成績の伸びは、この夏が分岐点。</p>
       <div style="display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-bottom:30px;">
         <a href="https://lin.ee/VUv5TNK" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:9px;background:#06c755;color:#fff;text-decoration:none;font-weight:900;font-size:clamp(15px,3.4vw,18px);padding:16px 32px;border-radius:999px;box-shadow:0 10px 28px rgba(6,199,85,.36);">LINEで無料相談する</a>
-        <a href="#courses" style="display:inline-flex;align-items:center;gap:8px;background:transparent;color:#f6f1e6;text-decoration:none;font-weight:700;font-size:clamp(14px,3.2vw,17px);padding:16px 28px;border-radius:999px;border:1.5px solid rgba(216,178,113,.5);">講座一覧を見る ↓</a>
+        <a href="#courses" class="list-move" style="display:inline-flex;align-items:center;gap:8px;background:transparent;color:#f6f1e6;text-decoration:none;font-weight:700;font-size:clamp(14px,3.2vw,17px);padding:16px 28px;border-radius:999px;border:1.5px solid rgba(216,178,113,.5);">講座一覧を見る ↓</a>
       </div>
       <div style="display:inline-flex;align-items:center;gap:12px;background:rgba(210,73,47,.14);border:1px solid rgba(210,73,47,.42);padding:11px 20px;border-radius:999px;font-size:clamp(12px,2.8vw,14px);font-weight:700;">
         <span style="width:7px;height:7px;border-radius:50%;background:#d2492f;animation:pulseDot 1.4s ease-in-out infinite;"></span>
@@ -237,7 +249,7 @@ LINEで無料相談
 
       </div>
       <div style="text-align:center;margin-top:clamp(40px,5vw,60px);" data-reveal>
-        <a href="#courses" style="display:inline-flex;align-items:center;gap:10px;background:#b58a45;color:#fff;text-decoration:none;font-weight:900;font-size:clamp(15px,3.4vw,18px);padding:16px 36px;border-radius:999px;box-shadow:0 10px 26px rgba(181,138,69,.3);">講座一覧を見る ↓</a>
+        <a href="#courses" class="list-move" style="display:inline-flex;align-items:center;gap:10px;background:#b58a45;color:#fff;text-decoration:none;font-weight:900;font-size:clamp(15px,3.4vw,18px);padding:16px 36px;border-radius:999px;box-shadow:0 10px 26px rgba(181,138,69,.3);">講座一覧を見る ↓</a>
       </div>
     </div>
   </section>
@@ -288,7 +300,7 @@ LINEで無料相談
 
       </div>
       <div style="text-align:center;margin-top:clamp(40px,5vw,60px);" data-reveal>
-        <a href="#courses" style="display:inline-flex;align-items:center;gap:10px;background:#f6f1e6;color:#13233f;text-decoration:none;font-weight:900;font-size:clamp(15px,3.4vw,18px);padding:16px 36px;border-radius:999px;">講座一覧を見る ↓</a>
+        <a href="#courses" class="list-move" style="display:inline-flex;align-items:center;gap:10px;background:#f6f1e6;color:#13233f;text-decoration:none;font-weight:900;font-size:clamp(15px,3.4vw,18px);padding:16px 36px;border-radius:999px;">講座一覧を見る ↓</a>
       </div>
     </div>
   </section>
@@ -345,9 +357,9 @@ LINEで無料相談
         </div>
       </div>
       <div style="text-align:center;margin-top:clamp(40px,5vw,60px);" data-reveal>
-        <a href="https://lin.ee/VUv5TNK" target="_blank" rel="noopener" style="display:inline-flex;flex-direction:column;align-items:center;gap:7px;background:#06c755;color:#fff;text-decoration:none;padding:24px 58px;border-radius:24px;box-shadow:0 18px 44px rgba(6,199,85,.4);">
+        <a href="https://lin.ee/VUv5TNK" target="_blank" rel="noopener" class="cta-move" style="display:inline-flex;flex-direction:column;align-items:center;gap:7px;background:#06c755;color:#fff;text-decoration:none;padding:24px 58px;border-radius:24px;box-shadow:0 18px 44px rgba(6,199,85,.4);">
           <span style="font-weight:900;font-size:clamp(20px,5.2vw,34px);letter-spacing:.01em;white-space:nowrap;">早速 無料で体験してみる</span>
-          <span style="font-weight:600;font-size:clamp(12px,3vw,16px);opacity:.95;">無理な勧誘はございません<br class="sp-br">お気軽にどうぞ！</span>
+          <span style="font-weight:600;font-size:clamp(12px,3vw,16px);opacity:.95;">無理な勧誘はございません。<br class="sp-br">お気軽にどうぞ！</span>
         </a>
       </div>
     </div>
@@ -358,7 +370,15 @@ LINEで無料相談
     <div style="max-width:1180px;margin:0 auto;">
       <div style="text-align:center;margin-bottom:clamp(40px,6vw,64px);" data-reveal>
         <div style="font-size:clamp(11px,2.6vw,13px);font-weight:700;letter-spacing:.16em;color:#b58a45;margin-bottom:16px;">COURSES · 講座一覧</div>
-        <h2 style="font-family:'Shippori Mincho B1',serif;font-weight:800;font-size:clamp(28px,6vw,52px);margin:0;color:#13233f;">夏期講習 <span style="color:#d2492f;">講座一覧</span></h2>
+        <h2 style="font-family:'Shippori Mincho B1',serif;font-weight:800;font-size:clamp(28px,6vw,52px);margin:0 0 24px;color:#13233f;">夏期講習 <span style="color:#d2492f;">講座一覧</span></h2>
+        <div style="display:inline-flex;align-items:center;gap:clamp(14px,3vw,22px);flex-wrap:wrap;justify-content:center;background:#13233f;border:1.5px solid #b58a45;border-radius:16px;padding:clamp(16px,3vw,22px) clamp(22px,4vw,36px);box-shadow:0 14px 36px rgba(19,35,63,.14);">
+          <div style="font-family:'Shippori Mincho B1',serif;font-weight:800;color:#fff;line-height:1;white-space:nowrap;"><span style="font-size:clamp(14px,3.2vw,17px);">1コマ</span><span style="font-size:clamp(34px,8vw,52px);color:#d8b271;margin:0 3px;">2,723</span><span style="font-size:clamp(17px,3.6vw,22px);">円</span><span style="font-size:clamp(14px,3.2vw,17px);color:#d8b271;">～</span></div>
+          <div style="width:1px;height:38px;background:rgba(216,178,113,.4);"></div>
+          <div style="text-align:left;">
+            <div style="font-size:clamp(13px,3vw,16px);font-weight:800;color:#d8b271;letter-spacing:.02em;">受講すればするほど</div>
+            <div style="font-size:clamp(18px,4.2vw,26px);font-weight:900;color:#fff;font-family:'Shippori Mincho B1',serif;line-height:1.2;">安くなる！</div>
+          </div>
+        </div>
       </div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:clamp(20px,3vw,32px);">
 
