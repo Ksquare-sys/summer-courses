@@ -402,6 +402,10 @@ h1 {
   flex: 0 0 auto;
 }
 
+.mobile-break {
+  display: none;
+}
+
 .hero-badges {
   display: flex;
   flex-wrap: wrap;
@@ -2530,7 +2534,165 @@ details p {
   }
 
   .hero-media img {
-    object-position: 74% 22%;
+    object-position: 92% 20%;
+  }
+
+  .hero-badges {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .hero-badges li {
+    flex: 1 1 0;
+    width: auto;
+    max-width: 118px;
+  }
+
+  h1.hero-title-sm {
+    font-size: clamp(22px, 7.2vw, 32px);
+  }
+
+  .hero-line2 {
+    display: block;
+    white-space: nowrap;
+    font-size: clamp(13px, 4.6vw, 19px);
+  }
+
+  .hero-actions .btn {
+    flex-wrap: wrap;
+  }
+
+  .btn-label-sub {
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 0.85em;
+  }
+
+  .mobile-break {
+    display: block;
+  }
+
+  .reality-heading-accent {
+    display: block;
+    white-space: nowrap;
+    font-size: clamp(20px, 7vw, 30px);
+  }
+
+  .pain-checklist li {
+    white-space: nowrap;
+    font-size: clamp(11px, 3.6vw, 15px);
+  }
+
+  .solution-sheet-desc {
+    font-size: clamp(11px, 3.4vw, 14px);
+    line-height: 1.6;
+  }
+
+  .solution-sheet-desc .mobile-line {
+    white-space: nowrap;
+    font-size: clamp(12px, 4vw, 15px);
+  }
+
+  .strength-prefix {
+    display: block;
+    color: var(--muted);
+    font-size: 0.82em;
+    font-weight: 800;
+  }
+
+  .strength-no,
+  .strength-yes {
+    padding: 14px 16px;
+    border: 2px solid var(--red);
+    border-radius: 10px;
+    font-size: clamp(15px, 4.6vw, 19px);
+    line-height: 1.5;
+  }
+
+  .strength-yes {
+    border-color: var(--blue);
+  }
+
+  .strength-route {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 20px 8px;
+  }
+
+  .strength-title-oneline {
+    font-size: clamp(15px, 5.6vw, 21px);
+  }
+
+  .strength-subtitle {
+    white-space: nowrap;
+    font-size: clamp(10px, 3.4vw, 13px);
+  }
+
+  .price-solution-heading,
+  .env-solution-heading {
+    white-space: nowrap;
+    font-size: clamp(16px, 6vw, 25px);
+  }
+
+  .price-reasons-heading h3 {
+    white-space: nowrap;
+    font-size: clamp(14px, 5.4vw, 21px);
+  }
+
+  .price-reason-card p {
+    font-size: 12.5px;
+  }
+
+  .price-value-break {
+    display: none;
+  }
+
+  .price-value-block h3 {
+    white-space: nowrap;
+    font-size: clamp(11px, 3.8vw, 15px);
+  }
+
+  .env-lead {
+    white-space: nowrap;
+    font-size: clamp(9px, 3vw, 12px);
+  }
+
+  .support-line1 {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: clamp(10px, 3.2vw, 12px);
+  }
+
+  .message-label-mobile-top {
+    display: none;
+  }
+
+  .message-label-original {
+    display: none;
+  }
+
+  .cta-band-btn {
+    padding: 20px 24px;
+    white-space: nowrap;
+    font-size: clamp(10px, 3.4vw, 14px);
+  }
+
+  .voices-sub {
+    white-space: nowrap;
+    font-size: clamp(9px, 3vw, 12px);
+  }
+
+  .final-cta h2 {
+    white-space: nowrap;
+    font-size: clamp(15px, 5.6vw, 21px);
+  }
+
+  .final-line1,
+  .final-line2 {
+    display: block;
+    white-space: nowrap;
+    font-size: clamp(9px, 3vw, 12px);
   }
 
 }
