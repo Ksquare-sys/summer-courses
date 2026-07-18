@@ -786,8 +786,16 @@ h3 {
   top: 96px;
 }
 
-.method-visual img,
 .portrait img {
+  width: 100%;
+  max-height: 560px;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.method-visual img {
   width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
@@ -1193,6 +1201,10 @@ h3 {
   margin: 10px 0 18px;
   color: var(--ink);
   font-weight: 900;
+}
+
+.message .message-layout {
+  align-items: center;
 }
 
 .message .message-profile {
