@@ -791,6 +791,7 @@ h3 {
   max-height: 560px;
   aspect-ratio: 3 / 4;
   object-fit: cover;
+  object-position: top;
   border-radius: 8px;
   box-shadow: var(--shadow);
 }
@@ -1193,6 +1194,10 @@ h3 {
   display: inline-block;
   margin: 0 0 12px;
   color: var(--blue);
+}
+
+.message .message-label.message-label-mobile-top {
+  display: none;
   font-size: 14px;
   font-weight: 950;
 }
