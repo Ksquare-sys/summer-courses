@@ -2701,7 +2701,7 @@ details p {
     line-height: 1.7;
   }
 
-  .cta-band-btn {
+  .cta-band .btn-primary.cta-band-btn {
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
